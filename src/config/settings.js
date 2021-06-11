@@ -2,7 +2,6 @@
  * @author knows 1002563923@qq.com
  * @description 全局变量配置
  */
-
 module.exports = {
   //开发以及部署时的URL，hash模式时在不确定二级目录名称的情况下建议使用""代表相对路径或者"/二级目录/"，history模式默认使用"/"或者"/二级目录/"
   publicPath: "",
@@ -20,16 +19,15 @@ module.exports = {
       ? "http://localhost:3000/api/"
       : "http://game.meeluo.com/api/",
   //标题 （包括初次加载雪花屏的标题 页面的标题 浏览器的标题）
-  title: "谜鹿代理商后台",
+  title: "谜鹿管理后台",
   //标题分隔符
   titleSeparator: " - ",
   //标题是否反转 如果为false:"page - title"，如果为ture:"title - page"
   titleReverse: false,
   //简写
   abbreviation: "vab-pro",
-  abbreviation: "vab-pro",
   //开发环境端口号
-  devPort: "9999",
+  devPort: "9998",
   //版本号
   version: process.env.VUE_APP_VERSION,
   //pro版本copyright可随意修改
@@ -43,7 +41,7 @@ module.exports = {
   //加载时显示文字
   loadingText: "正在加载中...",
   //token名称
-  tokenName: "Agent-Token",
+  tokenName: "Authorization",
   //token在localStorage、sessionStorage、cookie存储的key的名称
   tokenTableName: "token",
   //token失效回退到登录页时是否记录本次的路由
@@ -96,6 +94,4 @@ module.exports = {
   openFirstMenu: true,
   // 资源根链接
   sourceBaseUrl: "https://assets.meeluo.com/",
-  // 生成的二维码url
-  // qrcodeBaseUrl: "http://redirect.functors.cn/index.html",
 };
